@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 import config from './config/index'
 import app from './app'
+import { logger, errorlogger } from './shared/logger'
 
 const connectDb = async () => {
   try {
@@ -12,12 +13,12 @@ const connectDb = async () => {
         useUnifiedTopology: true,
       } as mongoose.ConnectOptions
     )
-    console.log('DB Connected')
+    logger.info('DB Connected')
     app.listen(config.port, () => {
-      console.log(`Server is running at http://localhost:${config.port}`)
+      logger.info(`Server is running at http://localhost:${config.port}`)
     })
   } catch (error) {
-    console.error('Error connecting to the database:', error)
+    errorlogger.error('Error connecting to the database:', error)
   }
 }
 
