@@ -2,6 +2,15 @@ import mongoose from 'mongoose'
 import config from './config/index'
 import app from './app'
 import { logger, errorlogger } from './shared/logger'
+import { Server } from 'http';
+
+let server: Server;
+
+process.on('uncaughtException', err => {
+  // eslint-disable-next-line no-console
+  errorlogger.error(err)
+  process.exit(1)
+})
 
 const connectDb = async () => {
   try {
@@ -20,6 +29,28 @@ const connectDb = async () => {
   } catch (error) {
     errorlogger.error('Error connecting to the database:', error)
   }
+
+  process.on('unhandledRejection', err => {
+    // eslint-disable-next-line no-console
+    console.log(
+      'Unhandeled rejection is detected, we are closing our server....'
+    )
+    if (server) {
+      server.close(() => {
+        errorlogger.error(err)
+        process.exit(1)
+      })
+    } else {
+      process.exit(1)
+    }
+  })
 }
 
-connectDb()
+connectDb();
+
+process.on('SIGTERM', () => {
+  logger.info('SIGTERM is received')
+  if(server) {
+    server.close()
+  }
+})
