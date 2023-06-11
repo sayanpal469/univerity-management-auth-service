@@ -1,0 +1,84 @@
+{
+  message: 'DB Connected',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T04:32:19.532Z'
+}
+{
+  message: 'Server is running at http://localhost:5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T04:32:19.566Z'
+}
+{
+  message: 'DB Connected',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T04:45:47.441Z'
+}
+{
+  message: 'Server is running at http://localhost:5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T04:45:47.457Z'
+}
+{
+  message: 'DB Connected',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T05:15:05.797Z'
+}
+{
+  message: 'Server is running at http://localhost:5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T05:15:05.821Z'
+}
+{
+  message: 'DB Connected',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T05:21:03.371Z'
+}
+{
+  message: 'Server is running at http://localhost:5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T05:21:03.384Z'
+}
+{
+  message: 'DB Connected',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T05:21:11.798Z'
+}
+{
+  message: 'Server is running at http://localhost:5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T05:21:11.811Z'
+}
+{
+  message: 'DB Connected',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T05:21:35.525Z'
+}
+{
+  message: 'Server is running at http://localhost:5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'Hello Sayan',
+  timestamp: '2023-06-10T05:21:35.540Z'
+}

@@ -1,0 +1,91 @@
+{
+  service: 'user-service',
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  level: 'error',
+  message: 'Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'right meow!',
+  timestamp: '2023-06-11T11:54:13.254Z'
+}
+{
+  service: 'user-service',
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  level: 'error',
+  message: 'Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'right meow!',
+  timestamp: '2023-06-11T11:54:19.097Z'
+}
+{
+  service: 'user-service',
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  level: 'error',
+  message: 'Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'right meow!',
+  timestamp: '2023-06-11T11:54:50.250Z'
+}
+{
+  service: 'user-service',
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  level: 'error',
+  message: 'Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'right meow!',
+  timestamp: '2023-06-11T11:55:10.393Z'
+}
+{
+  service: 'user-service',
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  level: 'error',
+  message: 'Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'right meow!',
+  timestamp: '2023-06-11T11:55:15.523Z'
+}
+{
+  service: 'user-service',
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  level: 'error',
+  message: 'Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'right meow!',
+  timestamp: '2023-06-11T11:57:02.602Z'
+}
+{
+  service: 'user-service',
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  level: 'error',
+  message: 'Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.pm6i8f3.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'right meow!',
+  timestamp: '2023-06-11T11:57:27.990Z'
+}
