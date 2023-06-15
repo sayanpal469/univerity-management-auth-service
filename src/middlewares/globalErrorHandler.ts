@@ -1,4 +1,4 @@
-import { Response, Request, NextFunction, ErrorRequestHandler } from 'express';
+import { Response, Request, ErrorRequestHandler } from 'express';
 import config from '../config';
 import { GenericErrorMessage } from '../interfaces/error';
 import handelValidationError from '../errors/ValidationError';
@@ -6,12 +6,12 @@ import ApiError from '../errors/ApiError';
 import { errorlogger } from '../shared/logger';
 import { ZodError } from 'zod';
 import handelZodError from '../errors/ZodError';
+import handleCastError from '../errors/handelCastError';
 
 const GlobalErrorHandler: ErrorRequestHandler = (
   err: any,
   req: Request,
-  res: Response,
-  next: NextFunction
+  res: Response
 ) => {
   // eslint-disable-next-line no-unused-expressions, no-console
   config.env === 'development'
@@ -34,6 +34,11 @@ const GlobalErrorHandler: ErrorRequestHandler = (
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessage = simplifiedError.errorMessage;
+  } else if (err?.name === 'CastError') {
+    const simplifiedError = handleCastError(err);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessage = simplifiedError.errorMessages;
   } else if (err instanceof ApiError) {
     statusCode = err?.statusCode;
     message = err?.message;
@@ -64,7 +69,6 @@ const GlobalErrorHandler: ErrorRequestHandler = (
     errorMessage,
     stack: config.env !== 'production' ? stack : undefined,
   });
-  next();
 };
 
 export default GlobalErrorHandler;
