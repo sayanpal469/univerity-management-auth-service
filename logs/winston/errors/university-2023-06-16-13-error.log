@@ -1,0 +1,12 @@
+{
+  level: 'error',
+  service: 'user-service',
+  label: 'right meow!',
+  timestamp: '2023-06-16T07:59:30.034Z'
+}
+{
+  level: 'error',
+  service: 'user-service',
+  label: 'right meow!',
+  timestamp: '2023-06-16T07:59:58.280Z'
+}

@@ -3,6 +3,7 @@ import cors from 'cors';
 import GlobalErrorHandler from './middlewares/globalErrorHandler';
 import routes from './app/routes/router';
 import httpStatusCode from 'http-status-codes';
+// import { generateLastFacultyId, generateStudentId } from './app/modules/users/user.utils';
 
 const app: Application = express();
 app.use(cors());
@@ -29,6 +30,18 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
+
+// const academinSemester = {
+//   code: '01',
+//   year: '2028'
+// }
+
+// const testId = async () =>{
+//   const test = await generateLastFacultyId()
+//   console.log(test)
+// }
+
+// testId()
 
 app.get('/', async (req: Request, res: Response) => {
   res.send('University management system');
